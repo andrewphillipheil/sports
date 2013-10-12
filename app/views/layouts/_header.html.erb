@@ -1,0 +1,38 @@
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                
+                <div id="logo"><a href="#home"><%= image_tag ('logo-icon.png') %></a></div>
+                
+                <div id="navigation" class="visible-md visible-lg">
+                    <ul id="sections">
+                        <li class="current"><a href="#home">Home</a></li>
+				        <li><%= link_to "Sign in", new_session_path(User) %></li>
+				        <li><%= link_to "Sign up", new_registration_path(User) %></li> 
+                    </ul>
+                </div>
+                <div id="navigation_mobile" class="visible-sm visible-xs">
+                    <button class="button_nav" id="showLeft"><i class="icon-reorder"></i> </button>   
+                </div>
+            </div>    
+        </div>    
+    </div>    
+</nav>  
+<!-- MOBILE NAV -->  
+<div class="cbp-spmenu visible-sm visible-xs" id="cbp-spmenu">
+    <h3>Menu</h3>
+    <ul id="sections_mobile">
+        <li class="current"><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#folio">Folio</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>   
+    </ul>
+</div> 
+<div class="row">
+    <div class="container">
+       
+    </div>  
+</div>
