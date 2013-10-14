@@ -272,7 +272,7 @@ nav #logo a {
 
 #showLeft {
     float:right;
-    margin-top:19px;
+    margin-top:10px;
 }
 
 .button_nav {
@@ -795,10 +795,7 @@ margin: 30px 10px 0px 30px;
 	#logo {
 		margin:0 30% 0 30%;
 	}
-
-	.button_nav {
-		padding-top: 0px;
-	}
+ 
 	nav {
 		height:50px;
 	}
