@@ -2,7 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-lg-12">
-                
+                <div id="navigation_mobile" class="visible-sm visible-xs">
+                    <button class="button_nav" id="showLeft"><i class="icon-reorder"></i> </button>   
+                </div>              
                 <div id="logo"><a href="#home"><%= image_tag ('logo-icon.png') %></a></div>
                 
                 <div id="navigation" class="visible-md visible-lg">
@@ -12,15 +14,14 @@
 				        <li><%= link_to "Sign up", new_registration_path(User) %></li> 
                     </ul>
                 </div>
-                <div id="navigation_mobile" class="visible-sm visible-xs">
-                    <button class="button_nav" id="showLeft"><i class="icon-reorder"></i> </button>   
-                </div>
+
             </div>    
         </div>    
     </div>    
 </nav>  
 <!-- MOBILE NAV -->  
 <div class="cbp-spmenu visible-sm visible-xs" id="cbp-spmenu">
+    <button id="close-cbp-spmenu" class="btn-close-menu pull-right"><i class="icon-remove"></i> </button> 
     <h3>Menu</h3>
     <ul id="sections_mobile">
         <li class="current"><a href="#home">Home</a></li>
@@ -36,3 +37,15 @@
        
     </div>  
 </div>
+
+<script>
+$( document ).ready(function() {
+   $('#showLeft').click(function() {
+        $('#cbp-spmenu').css({left: '0px'});
+    });
+
+   $('#close-cbp-spmenu').click(function(){
+        $('#cbp-spmenu').css({left: '-240px'})
+   })
+});
+</script>

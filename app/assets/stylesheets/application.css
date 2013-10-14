@@ -8,15 +8,12 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require twitter/bootstrap
  *= require_self
  *= require_tree .
- *= require twitter/bootstrap
- /*
  *= require font-awesome
- */
 
- */
-@import "twitter/bootstrap";
+ */ 
 
 body {    
     margin-top:0px;
@@ -24,7 +21,7 @@ body {
     -webkit-font-smoothing: antialiased;    
 }
 
-/* TYPOGRAPHY */
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight:700;
@@ -121,14 +118,8 @@ blockquote  {
 }
 
 
-/* //TYPOGRAPHY */
 
 
-
-
-/*##################################################################*/
-/* NAVIGATION - Desktop ############################################*/
-/*##################################################################*/
 
 nav {
     position:fixed;
@@ -212,13 +203,6 @@ nav #logo a {
     color: #0070aa;    
 }
 
-/* //NAVIGATION - Desktop*/
-
-
-
-/*##################################################################*/
-/* NAVIGATION - Mobile ############################################*/
-/*##################################################################*/
 
 .cbp-spmenu {
 	background: #3c3f41;
@@ -235,7 +219,7 @@ nav #logo a {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight:700;
-	color: #2d2e30;
+	color: #fff;
 	font-size: 20px;
 	padding: 20px;
 	margin: 0;
@@ -277,7 +261,7 @@ nav #logo a {
 }
 
 #navigation_mobile { 
-    float:right;
+    float:left;
     display: inline-block;
 }
 #cbp-spmenu ul{
@@ -291,21 +275,10 @@ nav #logo a {
 }
 
 .button_nav {
-	background-color:#ffffff;
-	-webkit-border-top-left-radius:100px;
-	-moz-border-radius-topleft:100px;
-	border-top-left-radius:100px;
-	-webkit-border-top-right-radius:100px;
-	-moz-border-radius-topright:100px;
-	border-top-right-radius:100px;
-	-webkit-border-bottom-right-radius:100px;
-	-moz-border-radius-bottomright:100px;
-	border-bottom-right-radius:100px;
-	-webkit-border-bottom-left-radius:100px;
-	-moz-border-radius-bottomleft:100px;
-	border-bottom-left-radius:100px;
+	border:none;
+	background:none;
+	background-image:none;
 	text-indent:0;
-	border:2px solid #0071aa;
 	display:inline-block;
 	color:#0071aa;
 	font-family:Arial;
@@ -333,11 +306,6 @@ nav #logo a {
     
 }
 
-/* //NAVIGATION - Mobile*/
-
-/*##################################################################*/
-/* HOME ############################################################*/
-/*##################################################################*/
 
 #home {
     height:574px;
@@ -358,29 +326,6 @@ nav #logo a {
     margin-top:165px;
 }
 
-/* Button Learn More */
-
-.btn {
-	border: none;
-	font-family: 'Montserrat', sans-serif;
-    font-weight:400;
-	font-size: 14px;
-	color: white;
-	background: none;
-	cursor: pointer;
-	padding: 17px 35px;
-	display: inline-block;
-	margin: 100px 0px 0px 0px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	outline: none;
-	position: relative;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-    z-index:90;
-    opacity:0;
-}
 
 .anim {
     margin-top: 60px;
@@ -468,325 +413,7 @@ nav #logo a {
 
 .btn-arrowb:hover:before {
 	top: -2px;
-}
-/* //Button Learn More */
-
-
-/*##################################################################*/
-/* ABOUT ###########################################################*/
-/*##################################################################*/
-
-#about {
-    background-color:white;
-    display:block;
-    position:relative;
-    z-index:120;
-    padding-top:90px;
-    text-align:center;
-    padding-bottom:72px;
-    opacity: 0;  
-}
-
-#about h2, #about blockquote p, #about p {
-    color:#4c4c4c;
-}
-
-#about blockquote p {
-    margin-top:36px;
-}
-
-
-/*##################################################################*/
-/* Clients #########################################################*/
-/*##################################################################*/
-
-
-#clients {
-    width:100%;
-    background-color: white;
-    background-image: url(../images/clients_bg.jpg);
-    background-position:top;
-    background-repeat:no-repeat;
-    opacity: 0;    
-}
-
-#clients h3 {
-    color:#4c4c4c;
-    margin-bottom:80px;    
-}
-
-#clients .client_logo {
-    border-style:solid;
-    border-width:4px;
-    border-color: #d2d2d2;
-    margin: 0 auto 30px auto;    
-}
-
-#client_logos {
-    margin-bottom:110px;
-}
-
-
-/*##################################################################*/
-/* SERVICES ########################################################*/
-/*##################################################################*/
-
-
-#services {
-    padding-top: 110px;
-    padding-bottom: 50px;
-    background-color:white;
-    background-image: url(../images/services_bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    display:block;
-    position:relative;
-    z-index:120;
-    padding-top:90px;
-    text-align:center;      
-}
-
-#services h2, #services p {
-    color:white;   
-}    
-
-#service_boxes {
-    margin-top:100px;
-}
-
-#service_boxes ul {
-	list-style:none; /* removes the default bullet */
-	padding-left: 20px;    
-    text-align:left;
-    width:250px;
-    margin: 0 auto;
-    color:white;    
-}
-
-#service_boxes ul li {
-    position: relative;
-    line-height: 35px;
-    padding-left: 10px;    
-}
-
-#service_boxes ul li:before {
-    position: absolute;
-    font-family: 'unicons';
-    font-size:18px;
-    vertical-align: bottom;
-    top:7px;
-    margin: 0 0px 0 -30px;      
-}
-
-#service_boxes li:before {
-    content: "\e049";
-}
-
-#service_boxes li:before, #service_boxes li:after {
-    color: white;
-    padding-right:10px;        
-}
-
-.service_box {
-    margin-bottom:60px;        
-}
-
-.animbox {
-	border: none;
-	font-family: 'Montserrat', sans-serif;
-    font-weight:400;
-	font-size: 14px;
-	color: white;
-	background: none;
-	cursor: default;
-	padding: 17px 35px;
-    width: 250px;
-	display: inline-block;
-	margin-top:0px;
-    margin-bottom: 30px;
-
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	outline: none;
-	position: relative;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-    z-index:90;    
-}
-
-.animbox:after {
-	content: '';
-	position: absolute;
-	z-index: -1;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.animbox:before {
-	font-family: 'unicons';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	position: relative;
-	-webkit-font-smoothing: antialiased;
-}
-
-.icon-design:before {
-	content: "\e066";
-    margin-top:1px;
-}
-
-.icon-develop:before {
-	content: "\e07b";
-    margin-top:4px;
-}
-
-.icon-print:before {
-	content: "\e08a";
-}
-
-.animbox-icon {
-    border-radius: 0px;
-	border: 2px solid rgba(255, 255, 255, .5);
-	color: #fff;
-	overflow: hidden;
-    -webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.animbox-icon span {
-	display: inline-block;
-	width: 100%;
-	height: 100%;
-	-webkit-transition: all 0.3s;
-	-webkit-backface-visibility: hidden;
-	-moz-transition: all 0.3s;
-	-moz-backface-visibility: hidden;
-	transition: all 0.3s;
-	backface-visibility: hidden;
-}
-
-.animbox-icon:before {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	line-height: 2.5;
-	font-size: 180%;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.service_box:hover .animbox-iconb span {
-	-webkit-transform: translateY(200%);
-	-moz-transform: translateY(200%);
-	-ms-transform: translateY(200%);
-	transform: translateY(200%);
-}
-
-.animbox-iconb:before {
-	left: 0;
-	top: -100%;
-}
-
-.service_box:hover .animbox-iconb:before {
-	top: -2px;
-}
-
-
-
-
-/*##################################################################*/
-/* PORTFOLIO #######################################################*/
-/*##################################################################*/
-
-#folio {
-    margin-top:2px;
-    padding-top: 90px;
-    padding-bottom: 50px;
-    background-color:white;
-    display:block;
-    position:relative;
-    z-index:120;
-    text-align:center;      
-}
-
-#folio p {
-    margin-bottom: 30px;
-}
-
-.grid {
-	max-width: 75em;
-	list-style: none;
-	margin: 40px auto;
-	padding: 0;
-}
-
-.grid li {
-	display: block;
-	float: left;
-	padding: 7px;
-	width: 33%;
-	opacity: 0;
-}
-
-.grid li.shown,
-.no-js .grid li,
-.no-cssanimations .grid li {
-	opacity: 1;
-}
-
-.grid li a,
-.grid li img {
-    padding:0px;
-	outline: none;
-	border: none;
-	display: block;
-	max-width: 100%;
-    cursor:url(../images/cursor.png),pointer;
-    background-color:white;
-    -webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;    
-}
-
-/* Appearing effect */
-.grid.effect li.animate {
-	-webkit-transform: translateY(200px);
-	-moz-transform: translateY(200px);
-	transform: translateY(200px);
-	-webkit-animation: moveUp 0.65s ease forwards;
-	-moz-animation: moveUp 0.65s ease forwards;
-	animation: moveUp 0.65s ease forwards;
-}
-
-@-webkit-keyframes moveUp {
-	to { -webkit-transform: translateY(0); opacity: 1; }
-}
-
-@-moz-keyframes moveUp {
-	to { -moz-transform: translateY(0); opacity: 1; }
-}
-
-@keyframes moveUp {
-	to { transform: translateY(0); opacity: 1; }
-}
-
-.grid li img:hover {
-    opacity:0.2    
-}
-
-
-/*##################################################################*/
-/* Modal Box #######################################################*/
-/*##################################################################*/
-
+} 
 .md-modal {
     position:fixed;
     top: 0;
@@ -915,63 +542,6 @@ nav #logo a {
 }
 
 
-/*##################################################################*/
-/* TEAM ############################################################*/
-/*##################################################################*/
-
-#team {
-    padding-top: 110px;
-    padding-bottom: 90px;
-    background-color:red;
-    background-image: url(../images/team_bg.jpg);
-    background-position: center;
-    background-repeat:repeat;
-    display:block;
-    position:relative;
-    z-index:120;
-    padding-top:90px;
-    text-align:center;      
-}
-
-#team h2, #team h4, #team p {
-    color:white;   
-}    
-
-#team p {
-    margin-top:0px;
-    margin-bottom:0px;
-}   
-
-.member_photo {
-    width: 140px;
-    height: 140px;
-    margin: 60px auto;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    transition: all 0.2s;
-}
-
-.team_box:hover .member_photo {
-    width: 160px;
-    height: 160px;
-    margin-bottom:50px;
-    margin-top:50px;
-}
-
-.border {
-	border: 2px dashed rgba(255, 255, 255, .5);
-}
-
-
-
-
-
-/*##################################################################*/
-/* CONTACT #########################################################*/
-/*##################################################################*/
-
-
 
 #contact {
     margin-top:2px;
@@ -989,7 +559,7 @@ nav #logo a {
 }
 
 
-/* Send Button */
+
 
 .btn-blue {
 	border: none;
@@ -1101,8 +671,6 @@ nav #logo a {
 }
 
 
-/* Contact Form */
-
 #contact form {
     margin-top: 40px;
 }
@@ -1171,10 +739,7 @@ nav #logo a {
     margin-top:60px;
     padding-bottom: 70px;
 }
-
-
-
-/* Social Icons */
+ 
 
 .social_icons {
     text-align:center;
@@ -1184,8 +749,7 @@ nav #logo a {
 .social_icons ul {
     display: inline-block;
     margin: 0px; 
-    padding: 0px;
-    /* For IE, the outcast */
+    padding: 0px; 
     zoom:1;
     *display: inline;
 }
@@ -1205,17 +769,24 @@ nav #logo a {
     text-decoration:none;         
 }
 
-/*##################################################################*/
-/* FOOTER #########################################################*/
-/*##################################################################*/
+.btn-close-menu {
+	background:none;
+	background-image:none;
+	border:none;
+	font-size:20px;
+	color:#fff;
+	padding:30px;
 
-#footer {
-    background-color:#3e3e3e;
-    padding-top:38px;
-    padding-bottom:38px;
 }
-#footer p {
-    color:#d6d6d6;
-    margin:0px;
-    padding:0px;
+
+
+@media screen and (max-width:991px){
+	#logo a>img {
+		width:50px;
+		padding-top:12px;
+	}
+
+	#logo {
+		margin:0 30% 0 35%;
+	}
 }
