@@ -221,11 +221,11 @@ nav #logo a {
     font-weight:700;
 	color: #fff;
 	font-size: 20px;
-	padding: 20px;
+	padding: 1px 20px;
 	margin: 0;
 	font-weight: 300; 
 	padding-bottom:0px;
-	margin-bottom:0xp;
+	margin-bottom:0px;
 }
 
 .cbp-spmenu a {
@@ -236,18 +236,18 @@ nav #logo a {
 	display: block;
 	color: #fff;
 	font-size: 15px;
-    border-bottom: 1px solid #434546;
+    border-bottom: 1px solid #003483;
 	padding-left: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .cbp-spmenu a:hover {
-	background: #2d2e30;
+	background: #003483;
 }
 
 .cbp-spmenu a:active {
-	background: #2d2e30;
+	background: #003483;
 	color: #8d9b9f;
 }
 
@@ -776,7 +776,7 @@ background-image:none;
 border: none;
 font-size: 20px;
 color: #fff;
-margin: 30px 10px 0px 30px;
+margin: 10px 10px 0px 30px;
 }
 
 #menu-search {
