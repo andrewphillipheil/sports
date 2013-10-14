@@ -791,11 +791,17 @@ nav #logo a {
 
 @media screen and (max-width:991px){
 	#logo a>img {
-		width:50px;
-		padding-top:12px;
+		width:50px; 
 	}
 
 	#logo {
 		margin:0 30% 0 30%;
+	}
+
+	.button_nav {
+		padding-top: 0px;
+	}
+	nav {
+		height:50px;
 	}
 }
