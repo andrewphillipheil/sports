@@ -11,8 +11,15 @@
                     <ul id="sections">
                         <li class="current"><a href="#home">Home</a></li>
 				        <li><%= link_to "Sign in", new_session_path(User) %></li>
-				        <li><%= link_to "Sign up", new_registration_path(User) %></li> 
+				        <li><%= link_to "Sign up", new_registration_path(User) %></li>  
                     </ul>
+               
+                <div class="input-group pull-right" style="max-width:300px; padding:20px;">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-danger"><i class="icon-search"></i></button>
+                    </span>
+                </div>
                 </div>
 
             </div>    
@@ -45,12 +52,6 @@
         <li><a href="#">Baseball</a></li>   
     </ul>
 </div> 
-<div class="row">
-    <div class="container">
-       
-    </div>  
-</div>
-
 <script>
 $( document ).ready(function() {
    $('#showLeft').click(function() {
