@@ -139,6 +139,7 @@ nav #logo {
 
     padding:0px; 
     display: inline-block;
+    float:left;
 }
 
 nav #logo a {
@@ -155,6 +156,7 @@ nav #logo a {
     float:left;
     list-style: none;
     padding-top:14px;
+    padding-left:0px;
 }
 
 #navigation ul li {
@@ -785,6 +787,47 @@ margin: 10px 10px 0px 30px;
 
 #page-container {
 	min-height:1000px;
+}
+
+#left-navigation {
+    float:left;
+}
+
+#left-navigation ul {
+    float: left;
+    list-style: none;
+    padding-top: 14px;
+    padding-left:0px;
+}
+
+#left-navigation ul li {
+    float: left;
+}
+
+#left-navigation a {
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+#left-navigation a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    color: #6e6e6e;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0,5px;
+    font-size: 13px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+#main-search {
+    max-width: 200px;
+    padding:20px;
 }
 
 footer {
