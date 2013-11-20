@@ -1,0 +1,34 @@
+
+/* NATIONAL TEAM COLORS */
+.bg-hornets-purple {
+  background-color: #594f8d;
+  color: #dbd8e9;
+}
+
+.bg-hornets-teal {
+  background-color: #00bba0;
+  color:#fff;
+}
+
+.bg-hornets-teal a{ 
+  color:#594f8d!important;
+  font-weight:bold;
+}
+/* REDSKINS */
+.bg-redksins-burgandy {
+  background-color:#5d2a2c;
+  color:#fff;
+}
+.bg-redksins-burgandy a {
+  color:#eee!important
+}
+
+.bg-redskins-yellow {
+  background-color:#ffb81c;
+  color:#5d2a2c;
+}
+
+.bg-redskins-yellow a{ 
+  color:#5d2a2c!important;
+  font-weight:bold;
+}
