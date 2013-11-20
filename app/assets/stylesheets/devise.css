@@ -1,5 +1,11 @@
-#sign-in-content {
+#sign-up-content {
 	background-image:url('basketball-bg.jpg');
+	background-size:cover;
+	height:100%;
+}
+
+#sign-in-content {
+	background-image:url('football-bg.jpg');
 	background-size:cover;
 	height:100%;
 }

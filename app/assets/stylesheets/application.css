@@ -823,6 +823,12 @@ html.layout-box .vbox > footer {
   margin-right: 0.5em;
   font-size: 14px;
 }
+
+#sign-in-icon {
+  margin-right: 0.5em;
+  font-size: 14px;
+}
+
 .nav-primary > ul > li > a {
   padding: 15px 15px;
   position: relative;
@@ -940,6 +946,15 @@ html.layout-box .vbox > footer {
     font-size: 19px;
     margin: 4px 0;
   }
+  #nav.nav-vertical #sign-in-link-drop i{
+    display: block;
+    font-size: 19px;
+    margin: 4px 0;
+  }
+  #nav.nav-vertical .nav-user {
+      text-align:center;
+  }
+  
   #nav.nav-vertical .nav-primary > ul > li > a .badge {
     position: absolute;
     right: 10px;
@@ -956,6 +971,10 @@ html.layout-box .vbox > footer {
 @media (max-width: 767px) {
   .nav-user {
     text-align: center;
+  }
+
+  #sign-in-link-drop {
+    text-align:left!important;
   }
   .nav-user .nav-avatar {
     margin-top: 20px;
@@ -2811,3 +2830,10 @@ fieldset[disabled] .btn-gplus.active {
   }
 }
 
+#bottom-reorder-icon:hover {
+  text-decoration: none;
+}
+
+#bottom-reorder-icon:hover {
+  text-decoration: none;
+}
