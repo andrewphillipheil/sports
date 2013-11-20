@@ -2,16 +2,15 @@
     <aside class="bg-primary bg-hornets-purple aside-sm ported-sign-in" id="nav">
       <section class="vbox">
         <header class="dker nav-bar nav-bar-fixed-top">
-          <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen" data-target="#nav" id="nav-links-menu">
+          <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen" data-target="#nav">
             <i class="icon-reorder"></i>
           </a>
 
           <a href="#" class="nav-brand" data-toggle="fullscreen">
             sportizen
           </a>
-          <%= link_to new_user_session_path, :class => "btn btn-link visible-xs", :id => "nav-links-signin" do %>
+          <%= link_to new_user_session_path, :class => "btn btn-link visible-xs", :id => "nav-links-signin", "data-toggle" => "class:show", "data-target" => ".nav-user" do %> 
               <i class="icon-signin"></i>
-              Sign In
           <% end %>
         </header>
         <section>
