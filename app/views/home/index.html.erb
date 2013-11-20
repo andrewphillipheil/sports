@@ -1,3 +1,15 @@
-<div id="page-container" class="container">
-
-</div>
+<section id="content">
+	<section class="vbox">
+		<header class="header bg-white b-b">
+          <p>
+          	Welcome to sportizen
+          </p>
+          <% if !user_signed_in? %>
+          		<p class="pull-right">
+          			<%= link_to('Sign In', new_user_registration_path) %>
+          		</p>
+          	<% end %>
+        </header>
+	</section>
+	<a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen" data-target="#nav"></a>
+</section>

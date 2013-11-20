@@ -15,10 +15,9 @@
           <!-- user -->
           <div class="bg-success nav-user hidden-xs pos-rlt">
             <div class="nav-avatar pos-rlt">
-              <a href="#" class="thumb-sm avatar animated rollIn" data-toggle="dropdown">
-                <%= image_tag ('avatar.png') %>
-                <span class="caret caret-white"></span>
-              </a>
+             
+               <%= link_to('Sign In', new_user_registration_path, html: { class: "thumb-sm avatar animated rollIn" }) %>
+              
               <ul class="dropdown-menu m-t-sm animated fadeInLeft">
                 <span class="arrow top"></span>
                 <li>
