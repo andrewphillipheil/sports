@@ -6,8 +6,17 @@
           </p>
           <% if !user_signed_in? %>
           		<p class="pull-right">
-          			<%= link_to('Sign In', new_user_registration_path) %>
+          			<%= link_to new_user_registration_path do %>
+		                <i class="icon-level-up"></i>
+		                Sign In
+             		<% end %>
           		</p>
+          		<p class="pull-right m-r-lg">
+          			<%= link_to new_user_session_path do %>
+		                <i class="icon-signin"></i>
+		                Sign In
+             		<% end %>
+          		</p>          		
           	<% end %>
         </header>
 	</section>

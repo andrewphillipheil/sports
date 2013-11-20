@@ -1999,6 +1999,11 @@ fieldset[disabled] .btn-gplus.active {
   background-color: #2c3039;
   color: #9aa1b1;
 }
+.bg-hornets {
+  background-color: #00bba0;
+  color:#fff;
+}
+
 .bg-black.lt,
 .bg-black .lt {
   background-color: #343843;

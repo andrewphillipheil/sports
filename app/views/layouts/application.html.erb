@@ -12,6 +12,7 @@
 	<![endif]-->
 </head>
 <body>	
+<section class="hbox stretch">
 <% if user_signed_in? %>
   <%= render "layouts/header" %>
 <% else %>
@@ -20,5 +21,6 @@
 
 <%= yield %>
 <%= render "layouts/footer" %>
+</section>
 </body>
 </html>
