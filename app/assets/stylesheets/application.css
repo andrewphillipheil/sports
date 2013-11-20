@@ -765,6 +765,10 @@ html.layout-box .vbox > footer {
   padding: 9px 12px;
   line-height: 30px;
 }
+.nav-bar > .btn:hover {
+  text-decoration: none;
+}
+
 .nav-bar .nav-brand + .btn {
   right: 0;
   top: 0;
@@ -2807,36 +2811,3 @@ fieldset[disabled] .btn-gplus.active {
   }
 }
 
-
-/* NATIONAL TEAM COLORS */
-.bg-hornets-purple {
-  background-color: #594f8d;
-  color: #dbd8e9;
-}
-
-.bg-hornets-teal {
-  background-color: #00bba0;
-  color:#fff;
-}
-
-.bg-hornets-teal a{ 
-  color:#594f8d!important;
-}
-/* REDSKINS */
-.bg-redksins-burgandy {
-  background-color:#5d2a2c;
-  color:#fff;
-}
-.bg-redksins-burgandy a {
-  color:#eee!important
-}
-
-.bg-redskins-yellow {
-  background-color:#ffb81c;
-  color:#5d2a2c;
-}
-
-.bg-redskins-yellow a{ 
-  color:#5d2a2c!important;
-  font-weight:bold;
-}
