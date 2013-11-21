@@ -980,6 +980,9 @@ html.layout-box .vbox > footer {
     margin-top: 20px;
     display: inline-block;
   }
+  #nav-not-signedin {
+    margin-top:0px; 
+  }
   .nav-user .nav-avatar .thumb-sm {
     position: relative;
     width: 160px;
