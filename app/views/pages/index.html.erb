@@ -1,0 +1,33 @@
+<style>
+/*
+#content {
+	background-image: url('assets/redskins-bg.png');
+	background-repeat:no-repeat;
+	background-position:100% 100%;
+}
+*/
+</style>
+<section id="content">
+	<section class="vbox">
+		<header class="header bg-white b-b">
+          <p>
+          	Welcome to Andrew Heil's Sports
+          </p>
+          <% if !user_signed_in? %>
+          		<p class="pull-right">
+          			<%= link_to new_user_registration_path do %>
+		                <i class="icon-level-up"></i>
+		                Sign Up
+             		<% end %>
+          		</p>
+          		<p class="pull-right m-r-lg hidden-xs">
+          			<%= link_to new_user_session_path do %>
+		                <i class="icon-signin"></i>
+		                Sign In
+             		<% end %>
+          		</p>          		
+          	<% end %>
+        </header>
+	</section>
+	<a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen" data-target="#nav"></a>
+</section>

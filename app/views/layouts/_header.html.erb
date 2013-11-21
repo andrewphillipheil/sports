@@ -6,14 +6,14 @@
           <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen" data-target="#nav">
             <i class="icon-reorder"></i>
           </a>
-          <a href="#" class="nav-brand" data-toggle="fullscreen">sportizen</a>
+          <a href="#" class="nav-brand" data-toggle="fullscreen"><i class="icon-shield"></i> sports</a>
           <a class="btn btn-link visible-xs" data-toggle="class:show" data-target=".nav-user">
             <i class="icon-comment-alt"></i>
           </a>
         </header>
         <section>
           <!-- user -->
-          <div class="bg-success nav-user hidden-xs pos-rlt">
+          <div class="bg-hornets-teal nav-user hidden-xs pos-rlt">
             <div class="nav-avatar pos-rlt">
               <a href="#" class="thumb-sm avatar animated rollIn" data-toggle="dropdown">
                 <%= image_tag ('avatar.png') %>
@@ -35,10 +35,10 @@
                 </li>
                 <li class="divider"></li>
                 <li>
-                  <a href="docs.html">Help</a>
+                  <%= link_to "Help", help_path %>
                 </li>
                 <li>
-                  <a href="signin.html">Logout</a>
+                  <%= link_to "Logout", destroy_user_session_path, :method => "delete" %>
                 </li>
               </ul>
               <div class="visible-xs m-t m-b">
