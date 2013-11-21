@@ -19,6 +19,8 @@ App3::Application.routes.draw do
   # Help Page
   get '/help',   to: 'pages#help'
 
+
+  get "/:id", :to => "users#show", :as => :user
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
