@@ -32,6 +32,7 @@
 				  <div><%= f.label :password_confirmation  %><br />
 				  <%= f.password_field :password_confirmation, :class => "devise-signup input" %></div>
 
+				  <div><%= f.hidden_field :admin, :value => "false" %></div>
 				  <div><%= f.submit "Sign up", :class => "btn btn-primary" %></div>
 			<% end %>
 			<div class="panel-footer">

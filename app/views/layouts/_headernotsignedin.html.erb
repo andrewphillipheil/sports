@@ -1,14 +1,14 @@
     <!-- .aside -->
-    <aside class="bg-primary bg-hornets-purple aside-sm ported-sign-in" id="nav">
+    <aside class="bg-primary bg-hornets-purple aside-md ported-sign-in" id="nav">
       <section class="vbox">
         <header class="dker nav-bar nav-bar-fixed-top">
           <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen" data-target="#nav">
             <i class="icon-reorder"></i>
           </a>
 
-          <a href="#" class="nav-brand" data-toggle="fullscreen">
+          <%= link_to root_path, :class => "nav-brand" do %>
             <i class="icon-shield"></i> sports
-          </a>
+          <% end %>
           <%= link_to new_user_session_path, :class => "btn btn-link visible-xs", :id => "nav-links-signin", "data-toggle" => "class:show", "data-target" => ".nav-user" do %> 
               <i class="icon-signin"></i>
           <% end %>

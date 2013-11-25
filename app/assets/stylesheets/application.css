@@ -2513,6 +2513,12 @@ fieldset[disabled] .btn-gplus.active {
 .text-uc {
   text-transform: uppercase;
 }
+.text-lc {
+  text-transform: lowercase;
+}
+.text-ca {
+  text-transform: capitalize;
+}
 .wrapper {
   padding: 15px;
 }

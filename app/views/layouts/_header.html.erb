@@ -1,12 +1,14 @@
 
     <!-- .aside -->
-    <aside class="bg-primary aside-sm" id="nav">
+    <aside class="bg-primary aside-md" id="nav">
       <section class="vbox">
         <header class="dker nav-bar nav-bar-fixed-top">
           <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen" data-target="#nav">
             <i class="icon-reorder"></i>
           </a>
-          <a href="#" class="nav-brand" data-toggle="fullscreen"><i class="icon-shield"></i> sports</a>
+          <%= link_to root_path, :class => "nav-brand" do %>
+            <i class="icon-shield"></i> sports
+          <% end %>
           <a class="btn btn-link visible-xs" data-toggle="class:show" data-target=".nav-user">
             <i class="icon-comment-alt"></i>
           </a>
@@ -21,9 +23,6 @@
               </a>
               <ul class="dropdown-menu m-t-sm animated fadeInLeft">
                 <span class="arrow top"></span>
-                <li>
-                  <a href="#">Settings</a>
-                </li>
                 <li>
                   <%= link_to "Profile", user_path(current_user.username) %>
                 </li>
@@ -87,10 +86,10 @@
           <nav class="nav-primary hidden-xs">
             <ul class="nav">
               <li>
-                <a href="index.html">
-                  <i class="icon-home"></i>
+                <%= link_to root_path do %>
+                 <i class="icon-home"></i>
                   <span>Home</span>
-                </a>
+                <% end %>
               </li>
               <li class="dropdown-submenu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
